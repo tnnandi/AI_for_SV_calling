@@ -7,32 +7,32 @@ This repository curates AI-based tools developed for structural variant (SV) cal
 
 - **Simple SV Callers** – Designed to detect individual SV types (e.g., deletions, insertions).
 - **Complex SV Callers** – Capable of identifying and reconstructing compound or multi-breakpoint SVs.
-- **Post-calling Filters** – Improve precision of SV calls from existing tools.
+
 
 ---
 
-## 🧬 AI-based Callers for **Simple SVs**
+## AI-based Callers for **Simple SVs**
 
 | Caller / Tool Name | Scope | AI Method | Publication / GitHub Link |
 |--------------------|--------|-----------|----------------------------|
-| DeepSV | Deletions (≥50 bp) | CNN on alignment images | [Paper](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-2923-z) / No official repo |
-| SVcnn | Deletions, Insertions | Deep CNN (long-read alignments) | [Paper](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-023-05256-3) / [GitHub](https://github.com/nwpuzhengyan/SVcnn) |
-| Cue | All major SV types | Stacked Hourglass CNN | [Paper](https://www.nature.com/articles/s41592-023-02025-2) / [GitHub](https://github.com/PopicLab/cue) |
-| cnnLSV | DEL, INS, INV, DUP | CNN + PCA-based filtering | [Paper](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-023-05241-w) / [GitHub](https://github.com/mhuidong/cnnLSV) |
-| NPSV-deep | SV Genotyping | Image similarity + CNN | [Paper](https://academic.oup.com/bioinformatics/article/40/1/btae029/7512217) / [GitHub](https://github.com/mlinderm/npsv2) |
+| DeepSV | DEL from short reads | CNN on pileup images | [Paper](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-3299-y) / [GitHub](https://github.com/CSuperlei/DeepSV) |
+| SVcnn | DEL from long reads | Time-distributed CNN + Bidirectional LSTM | [Paper](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-023-05324-x) / [GitHub](https://github.com/nwpuzhengyan/SVcnn) |
+| cnnLSV | DEL, INS, INV, DUP | CNN + PCA-based filtering | [Paper](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-023-05243-x) / [GitHub](https://github.com/mhuidong/cnnLSV) |
+|Breaknet|Deletions using long-read data|Time-distributed CNN, Bidirectional LSTM|[Paper](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-04499-5) / [GitHub](https://github.com/luojunwei/BreakNet) |
+|MAMnet|DEl, INS from long reads|Time-distributed CNN + LSTM|[Paper](https://academic.oup.com/bib/article/23/5/bbac195/6587170) / [GitHub](https://github.com/micahvista/MAMnet)|
 
 ---
 
-## 🔁 AI-based Callers for **Complex SVs**
+## AI-based Callers for **Complex SVs**
 
 | Caller / Tool Name | Scope | AI Method | Publication / GitHub Link |
 |--------------------|--------|-----------|----------------------------|
-| SVision | Complex SVs (multi-breakpoint) | CNN with multi-object recognition | [Paper](https://www.nature.com/articles/s41592-022-01619-1) / [GitHub](https://github.com/xjtu-omics/SVision) |
+| SVision | Complex SVs (multi-breakpoint) | CNN with multi-object recognition | [Paper](https://www.nature.com/articles/s41592-022-01609-w) / [GitHub](https://github.com/xjtu-omics/SVision) |
 | ARC-SV | Complex SVs from short reads | Probabilistic ML + SV graph modeling | [Paper](https://www.cell.com/cell/fulltext/S0092-8674(24)00174-0) / [GitHub](https://github.com/jgarthur/arcsv) |
-
+| Cue | DEL, INS, INVDUP from short reads | Stacked Hourglass CNN | [Paper](https://www.nature.com/articles/s41592-023-01799-x) / [GitHub](https://github.com/PopicLab/cue) |
 ---
-
-## 🧹 AI-based **Post-calling Filtering & Refinement** Tools
+<!--
+## AI-based **Post-calling Filtering & Refinement** Tools
 
 | Tool Name | Scope | AI Method | Publication / GitHub Link |
 |-----------|--------|-----------|----------------------------|
@@ -41,6 +41,7 @@ This repository curates AI-based tools developed for structural variant (SV) cal
 | sv-channels | Deletions (short-read) | 1D-CNN on signal channels | [Preprint](https://www.biorxiv.org/content/10.1101/2024.02.20.581323v1) / [GitHub](https://github.com/GooglingTheCancerGenome/sv-channels) |
 
 ---
+-->
 
 ## 📌 How to Contribute
 
