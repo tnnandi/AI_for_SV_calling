@@ -28,7 +28,7 @@ This repository curates AI-based tools developed for structural variant (SV) cal
 | Caller / Tool Name | Scope | AI Method | Publication / GitHub Link |
 |--------------------|--------|-----------|----------------------------|
 | SVision | Complex SVs (multi-breakpoint) | CNN with multi-object recognition | [Paper](https://www.nature.com/articles/s41592-022-01609-w) / [GitHub](https://github.com/xjtu-omics/SVision) |
-| ARC-SV | Complex SVs from short reads | Probabilistic ML + SV graph modeling | [Paper](https://www.cell.com/cell/fulltext/S0092-8674(24)00174-0) / [GitHub](https://github.com/jgarthur/arcsv) |
+| ARC-SV | Complex SVs from short reads | Probabilistic ML + SV graph modeling | [Paper](https://www.sciencedirect.com/science/article/abs/pii/S0092867424010328) / [GitHub](https://github.com/jgarthur/arcsv) |
 | Cue | DEL, INS, INVDUP from short reads | Stacked Hourglass CNN | [Paper](https://www.nature.com/articles/s41592-023-01799-x) / [GitHub](https://github.com/PopicLab/cue) |
 ---
 <!--
